@@ -1,0 +1,80 @@
+// 弹窗样式
+.el-dialog {
+  position: relative;
+  &__header {
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    font-size: 20px;
+    color: @textColor;
+    border-bottom: 1px solid @borderColor;
+    &::before {
+      content: '';
+      width: 5px;
+      display: inline-block;
+      height: 20px;
+      background-color: #437eff;
+      border-radius: 0 3px 3px 0;
+      margin-right: 20px;
+      vertical-align: text-bottom;
+    }
+  }
+  &__body {
+    padding: 20px 40px;
+  }
+  &__footer {
+    bottom: 0;
+    width: 100%;
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    padding: 0;
+    border-top: 1px solid @borderColor;
+    .el-button {
+      width: 72px;
+      height: 34px;
+      line-height: 0;
+    }
+  }
+}
+// 表格样式
+.el-table {
+  thead {
+    th {
+      &.el-table__cell {
+        background-color: @tableHeadColor;
+      }
+    }
+  }
+  .el-table__cell {
+    padding: 2px 0;
+  }
+}
+// 按钮样式
+.el-button {
+  height: 34px;
+  min-height: 34px;
+  padding: 2px 20px;
+}
+// 输入框样式
+.el-input {
+  .el-input__inner {
+    height: 34px;
+    line-height: 34px;
+  }
+}
+//滚动条样式：谷歌浏览器下
+::-webkit-scrollbar {
+  height: 12px;
+  width: 8px;
+}
+//滚动条的轨道
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+//滚动条的滑块按钮
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ccc;
+  box-shadow: inset 0 0 5px #fff;
+}
