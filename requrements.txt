@@ -1,0 +1,12 @@
+Flask==2.0.2
+Flask_SocketIO==4.3.2
+flask-cors
+python-engineio==3.14.2
+python-socketio==4.6.1
+Werkzeug==2.0.1
+numpy
+scipy
+scikit-learn
+psutil
+pandas
+json
